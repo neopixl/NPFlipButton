@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="NPButtonFlip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdn-y3-SG6" customClass="NPButtonWithFilp" customModule="NPButtonFlip" customModuleProvider="target">
+                                <rect key="frame" x="60" y="50" width="480" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mD0-MF-lgj"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="buttonBigTouchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="vXE-k1-F4D"/>
+                                    <action selector="buttonBigTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LtK-cR-S2j"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RiE-bP-wkh" customClass="NPButtonWithFilp" customModule="NPButtonFlip" customModuleProvider="target">
+                                <rect key="frame" x="60" y="117" width="216" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="buttonLeftTouchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="IPE-tS-ecN"/>
+                                    <action selector="buttonLeftTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="udJ-5s-63J"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I98-qk-NLK" customClass="NPButtonWithFilp" customModule="NPButtonFlip" customModuleProvider="target">
+                                <rect key="frame" x="324" y="117" width="216" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="buttonRightTouchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="eiK-Uf-5K0"/>
+                                    <action selector="buttonRightTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nW0-Da-7gV"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vA3-cp-dSC">
+                                <rect key="frame" x="271" y="220" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mco-QU-XJI" customClass="NPFlipView" customModule="NPButtonFlip" customModuleProvider="target">
+                                <rect key="frame" x="152" y="262" width="32" height="36"/>
+                                <connections>
+                                    <action selector="flipViewLeftTouchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="6KB-DV-tHt"/>
+                                    <action selector="flipViewLeftTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="66X-vH-foR"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HdA-Rm-CgZ" customClass="NPFlipView" customModule="NPButtonFlip" customModuleProvider="target">
+                                <rect key="frame" x="416" y="262" width="32" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="6Bd-pD-poc"/>
+                                    <constraint firstAttribute="width" constant="32" id="nkm-HF-TTc"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="flipViewRightTouchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="0J8-qy-dCJ"/>
+                                    <action selector="flipViewRightTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E8g-Xn-lAP"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfq-7a-rdb">
+                                <rect key="frame" x="145" y="318" width="51" height="30"/>
+                                <state key="normal" title="ToBack">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toBack:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7MG-Mx-3sD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2l-da-Gb7">
+                                <rect key="frame" x="409" y="318" width="52" height="30"/>
+                                <state key="normal" title="ToFront">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toFront:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lfO-UA-Pg5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZo-hy-qlp">
+                                <rect key="frame" x="417" y="182" width="30" height="30"/>
+                                <state key="normal" title="Off">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="off:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MK9-yw-UOC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l68-bC-5ZE">
+                                <rect key="frame" x="154" y="182" width="30" height="30"/>
+                                <state key="normal" title="On">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="on:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QHf-Jo-fBN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mco-QU-XJI" firstAttribute="top" secondItem="l68-bC-5ZE" secondAttribute="bottom" constant="50" id="4BE-2Z-jlg"/>
+                            <constraint firstItem="sdn-y3-SG6" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="50" id="6Vg-h1-iRg"/>
+                            <constraint firstItem="Pfq-7a-rdb" firstAttribute="centerY" secondItem="a2l-da-Gb7" secondAttribute="centerY" id="8A0-aG-JER"/>
+                            <constraint firstItem="HdA-Rm-CgZ" firstAttribute="height" secondItem="Mco-QU-XJI" secondAttribute="height" id="8yO-cx-qmu"/>
+                            <constraint firstItem="RiE-bP-wkh" firstAttribute="leading" secondItem="sdn-y3-SG6" secondAttribute="leading" id="AVr-P6-xlF"/>
+                            <constraint firstItem="HdA-Rm-CgZ" firstAttribute="centerX" secondItem="a2l-da-Gb7" secondAttribute="centerX" constant="-3" id="D0C-dm-0vN"/>
+                            <constraint firstItem="RiE-bP-wkh" firstAttribute="top" secondItem="sdn-y3-SG6" secondAttribute="bottom" constant="17" id="Fu2-Kg-GkJ"/>
+                            <constraint firstItem="I98-qk-NLK" firstAttribute="height" secondItem="RiE-bP-wkh" secondAttribute="height" id="LBj-LH-ApT"/>
+                            <constraint firstItem="Pfq-7a-rdb" firstAttribute="centerX" secondItem="Mco-QU-XJI" secondAttribute="centerX" constant="2.5" id="NCO-zN-WXJ"/>
+                            <constraint firstItem="RiE-bP-wkh" firstAttribute="centerX" secondItem="l68-bC-5ZE" secondAttribute="centerX" constant="-0.5" id="Naa-t0-81F"/>
+                            <constraint firstAttribute="centerX" secondItem="sdn-y3-SG6" secondAttribute="centerX" id="S8L-te-nlS"/>
+                            <constraint firstItem="I98-qk-NLK" firstAttribute="trailing" secondItem="sdn-y3-SG6" secondAttribute="trailing" id="VxC-FA-B0T"/>
+                            <constraint firstAttribute="centerX" secondItem="vA3-cp-dSC" secondAttribute="centerX" id="YEn-wN-ndP"/>
+                            <constraint firstItem="RiE-bP-wkh" firstAttribute="centerX" secondItem="Mco-QU-XJI" secondAttribute="centerX" id="Zeg-Bn-Ng8"/>
+                            <constraint firstItem="vA3-cp-dSC" firstAttribute="top" secondItem="sdn-y3-SG6" secondAttribute="bottom" constant="120" id="ahy-EC-m4W"/>
+                            <constraint firstItem="iZo-hy-qlp" firstAttribute="centerX" secondItem="I98-qk-NLK" secondAttribute="centerX" id="bG1-ms-R7y"/>
+                            <constraint firstItem="HdA-Rm-CgZ" firstAttribute="centerX" secondItem="I98-qk-NLK" secondAttribute="centerX" id="cu7-Pm-IEx"/>
+                            <constraint firstItem="Mco-QU-XJI" firstAttribute="centerY" secondItem="HdA-Rm-CgZ" secondAttribute="centerY" id="dUi-M3-X9a"/>
+                            <constraint firstItem="I98-qk-NLK" firstAttribute="width" secondItem="RiE-bP-wkh" secondAttribute="width" id="ecs-90-XW3"/>
+                            <constraint firstItem="Pfq-7a-rdb" firstAttribute="top" secondItem="Mco-QU-XJI" secondAttribute="bottom" constant="20" id="iFe-e2-WX2"/>
+                            <constraint firstItem="l68-bC-5ZE" firstAttribute="top" secondItem="RiE-bP-wkh" secondAttribute="bottom" constant="15" id="iJC-nk-bmA"/>
+                            <constraint firstItem="RiE-bP-wkh" firstAttribute="width" secondItem="sdn-y3-SG6" secondAttribute="width" multiplier="0.45" id="oyo-Rc-6fS"/>
+                            <constraint firstAttribute="width" secondItem="sdn-y3-SG6" secondAttribute="width" multiplier="1.25" id="q53-2O-TDP"/>
+                            <constraint firstItem="RiE-bP-wkh" firstAttribute="height" secondItem="sdn-y3-SG6" secondAttribute="height" id="tk6-2C-yyo"/>
+                            <constraint firstItem="HdA-Rm-CgZ" firstAttribute="width" secondItem="Mco-QU-XJI" secondAttribute="width" id="vkB-nh-i4e"/>
+                            <constraint firstItem="l68-bC-5ZE" firstAttribute="centerY" secondItem="iZo-hy-qlp" secondAttribute="centerY" id="zHF-Oi-UmT"/>
+                            <constraint firstItem="I98-qk-NLK" firstAttribute="centerY" secondItem="RiE-bP-wkh" secondAttribute="centerY" id="zu4-Yd-f7P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonBig" destination="sdn-y3-SG6" id="78E-EI-9qM"/>
+                        <outlet property="buttonLeft" destination="RiE-bP-wkh" id="VSq-cg-P2s"/>
+                        <outlet property="buttonRight" destination="I98-qk-NLK" id="pS2-cb-S6B"/>
+                        <outlet property="flipLeft" destination="Mco-QU-XJI" id="7bx-px-AlU"/>
+                        <outlet property="flipRight" destination="HdA-Rm-CgZ" id="hTV-U3-wmg"/>
+                        <outlet property="labelAction" destination="vA3-cp-dSC" id="rAD-fa-m0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

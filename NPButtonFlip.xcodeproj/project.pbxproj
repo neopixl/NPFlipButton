@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77405D951A528E7700033517 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77405D941A528E7700033517 /* AppDelegate.swift */; };
+		77405D971A528E7700033517 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77405D961A528E7700033517 /* ViewController.swift */; };
+		77405D9A1A528E7700033517 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77405D981A528E7700033517 /* Main.storyboard */; };
+		77405D9C1A528E7700033517 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77405D9B1A528E7700033517 /* Images.xcassets */; };
+		77405D9F1A528E7700033517 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77405D9D1A528E7700033517 /* LaunchScreen.xib */; };
+		77405DAB1A528E7700033517 /* NPButtonFlipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77405DAA1A528E7700033517 /* NPButtonFlipTests.swift */; };
+		77405DB91A528F4900033517 /* NPButtonWithFilp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77405DB61A528F4900033517 /* NPButtonWithFilp.swift */; };
+		77405DBA1A528F4900033517 /* NPFlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77405DB81A528F4900033517 /* NPFlipView.swift */; };
+		77405DC41A52905400033517 /* btn_right_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 77405DBC1A52905400033517 /* btn_right_on.png */; };
+		77405DC51A52905400033517 /* btn_right_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77405DBD1A52905400033517 /* btn_right_on@2x.png */; };
+		77405DC61A52905400033517 /* btn_right_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 77405DBE1A52905400033517 /* btn_right_off.png */; };
+		77405DC71A52905400033517 /* btn_right_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77405DBF1A52905400033517 /* btn_right_off@2x.png */; };
+		77405DC81A52905400033517 /* btn_wrong_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 77405DC01A52905400033517 /* btn_wrong_on.png */; };
+		77405DC91A52905400033517 /* btn_wrong_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77405DC11A52905400033517 /* btn_wrong_on@2x.png */; };
+		77405DCA1A52905400033517 /* btn_wrong_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 77405DC21A52905400033517 /* btn_wrong_off.png */; };
+		77405DCB1A52905400033517 /* btn_wrong_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77405DC31A52905400033517 /* btn_wrong_off@2x.png */; };
+		779301221A5300C8003CE683 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 779301211A5300C8003CE683 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77405DA51A528E7700033517 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77405D871A528E7700033517 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77405D8E1A528E7700033517;
+			remoteInfo = NPButtonFlip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		77405D8F1A528E7700033517 /* NPButtonFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPButtonFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77405D931A528E7700033517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77405D941A528E7700033517 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77405D961A528E7700033517 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		77405D991A528E7700033517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77405D9B1A528E7700033517 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		77405D9E1A528E7700033517 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		77405DA41A528E7700033517 /* NPButtonFlipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NPButtonFlipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77405DA91A528E7700033517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77405DAA1A528E7700033517 /* NPButtonFlipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPButtonFlipTests.swift; sourceTree = "<group>"; };
+		77405DB61A528F4900033517 /* NPButtonWithFilp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPButtonWithFilp.swift; sourceTree = "<group>"; };
+		77405DB81A528F4900033517 /* NPFlipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPFlipView.swift; sourceTree = "<group>"; };
+		77405DBC1A52905400033517 /* btn_right_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_right_on.png; sourceTree = "<group>"; };
+		77405DBD1A52905400033517 /* btn_right_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_right_on@2x.png"; sourceTree = "<group>"; };
+		77405DBE1A52905400033517 /* btn_right_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_right_off.png; sourceTree = "<group>"; };
+		77405DBF1A52905400033517 /* btn_right_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_right_off@2x.png"; sourceTree = "<group>"; };
+		77405DC01A52905400033517 /* btn_wrong_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_wrong_on.png; sourceTree = "<group>"; };
+		77405DC11A52905400033517 /* btn_wrong_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_wrong_on@2x.png"; sourceTree = "<group>"; };
+		77405DC21A52905400033517 /* btn_wrong_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_wrong_off.png; sourceTree = "<group>"; };
+		77405DC31A52905400033517 /* btn_wrong_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_wrong_off@2x.png"; sourceTree = "<group>"; };
+		779301211A5300C8003CE683 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77405D8C1A528E7700033517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77405DA11A528E7700033517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77405D861A528E7700033517 = {
+			isa = PBXGroup;
+			children = (
+				77405D911A528E7700033517 /* NPButtonFlip */,
+				77405DA71A528E7700033517 /* NPButtonFlipTests */,
+				77405D901A528E7700033517 /* Products */,
+				779301211A5300C8003CE683 /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		77405D901A528E7700033517 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77405D8F1A528E7700033517 /* NPButtonFlip.app */,
+				77405DA41A528E7700033517 /* NPButtonFlipTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77405D911A528E7700033517 /* NPButtonFlip */ = {
+			isa = PBXGroup;
+			children = (
+				77405DBB1A52905400033517 /* Ressources */,
+				77405DB41A528F4900033517 /* Classes */,
+				77405D941A528E7700033517 /* AppDelegate.swift */,
+				77405D961A528E7700033517 /* ViewController.swift */,
+				77405D981A528E7700033517 /* Main.storyboard */,
+				77405D9B1A528E7700033517 /* Images.xcassets */,
+				77405D9D1A528E7700033517 /* LaunchScreen.xib */,
+				77405D921A528E7700033517 /* Supporting Files */,
+			);
+			path = NPButtonFlip;
+			sourceTree = "<group>";
+		};
+		77405D921A528E7700033517 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77405D931A528E7700033517 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77405DA71A528E7700033517 /* NPButtonFlipTests */ = {
+			isa = PBXGroup;
+			children = (
+				77405DAA1A528E7700033517 /* NPButtonFlipTests.swift */,
+				77405DA81A528E7700033517 /* Supporting Files */,
+			);
+			path = NPButtonFlipTests;
+			sourceTree = "<group>";
+		};
+		77405DA81A528E7700033517 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77405DA91A528E7700033517 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77405DB41A528F4900033517 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				77405DB51A528F4900033517 /* NPButtonWithFlip */,
+				77405DB71A528F4900033517 /* NPFlipView */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		77405DB51A528F4900033517 /* NPButtonWithFlip */ = {
+			isa = PBXGroup;
+			children = (
+				77405DB61A528F4900033517 /* NPButtonWithFilp.swift */,
+			);
+			path = NPButtonWithFlip;
+			sourceTree = "<group>";
+		};
+		77405DB71A528F4900033517 /* NPFlipView */ = {
+			isa = PBXGroup;
+			children = (
+				77405DB81A528F4900033517 /* NPFlipView.swift */,
+			);
+			path = NPFlipView;
+			sourceTree = "<group>";
+		};
+		77405DBB1A52905400033517 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				77405DBC1A52905400033517 /* btn_right_on.png */,
+				77405DBD1A52905400033517 /* btn_right_on@2x.png */,
+				77405DBE1A52905400033517 /* btn_right_off.png */,
+				77405DBF1A52905400033517 /* btn_right_off@2x.png */,
+				77405DC01A52905400033517 /* btn_wrong_on.png */,
+				77405DC11A52905400033517 /* btn_wrong_on@2x.png */,
+				77405DC21A52905400033517 /* btn_wrong_off.png */,
+				77405DC31A52905400033517 /* btn_wrong_off@2x.png */,
+			);
+			path = Ressources;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77405D8E1A528E7700033517 /* NPButtonFlip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77405DAE1A528E7700033517 /* Build configuration list for PBXNativeTarget "NPButtonFlip" */;
+			buildPhases = (
+				77405D8B1A528E7700033517 /* Sources */,
+				77405D8C1A528E7700033517 /* Frameworks */,
+				77405D8D1A528E7700033517 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NPButtonFlip;
+			productName = NPButtonFlip;
+			productReference = 77405D8F1A528E7700033517 /* NPButtonFlip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77405DA31A528E7700033517 /* NPButtonFlipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77405DB11A528E7700033517 /* Build configuration list for PBXNativeTarget "NPButtonFlipTests" */;
+			buildPhases = (
+				77405DA01A528E7700033517 /* Sources */,
+				77405DA11A528E7700033517 /* Frameworks */,
+				77405DA21A528E7700033517 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77405DA61A528E7700033517 /* PBXTargetDependency */,
+			);
+			name = NPButtonFlipTests;
+			productName = NPButtonFlipTests;
+			productReference = 77405DA41A528E7700033517 /* NPButtonFlipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77405D871A528E7700033517 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Neopixl;
+				TargetAttributes = {
+					77405D8E1A528E7700033517 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					77405DA31A528E7700033517 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 77405D8E1A528E7700033517;
+					};
+				};
+			};
+			buildConfigurationList = 77405D8A1A528E7700033517 /* Build configuration list for PBXProject "NPButtonFlip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77405D861A528E7700033517;
+			productRefGroup = 77405D901A528E7700033517 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77405D8E1A528E7700033517 /* NPButtonFlip */,
+				77405DA31A528E7700033517 /* NPButtonFlipTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77405D8D1A528E7700033517 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77405DC61A52905400033517 /* btn_right_off.png in Resources */,
+				77405DC71A52905400033517 /* btn_right_off@2x.png in Resources */,
+				77405D9A1A528E7700033517 /* Main.storyboard in Resources */,
+				77405D9F1A528E7700033517 /* LaunchScreen.xib in Resources */,
+				77405D9C1A528E7700033517 /* Images.xcassets in Resources */,
+				77405DC51A52905400033517 /* btn_right_on@2x.png in Resources */,
+				77405DC81A52905400033517 /* btn_wrong_on.png in Resources */,
+				77405DCA1A52905400033517 /* btn_wrong_off.png in Resources */,
+				77405DCB1A52905400033517 /* btn_wrong_off@2x.png in Resources */,
+				77405DC41A52905400033517 /* btn_right_on.png in Resources */,
+				77405DC91A52905400033517 /* btn_wrong_on@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77405DA21A528E7700033517 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77405D8B1A528E7700033517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77405DB91A528F4900033517 /* NPButtonWithFilp.swift in Sources */,
+				77405D971A528E7700033517 /* ViewController.swift in Sources */,
+				779301221A5300C8003CE683 /* README.md in Sources */,
+				77405D951A528E7700033517 /* AppDelegate.swift in Sources */,
+				77405DBA1A528F4900033517 /* NPFlipView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77405DA01A528E7700033517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77405DAB1A528E7700033517 /* NPButtonFlipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77405DA61A528E7700033517 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77405D8E1A528E7700033517 /* NPButtonFlip */;
+			targetProxy = 77405DA51A528E7700033517 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77405D981A528E7700033517 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77405D991A528E7700033517 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77405D9D1A528E7700033517 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77405D9E1A528E7700033517 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77405DAC1A528E7700033517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77405DAD1A528E7700033517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77405DAF1A528E7700033517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NPButtonFlip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		77405DB01A528E7700033517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NPButtonFlip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		77405DB21A528E7700033517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NPButtonFlipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NPButtonFlip.app/NPButtonFlip";
+			};
+			name = Debug;
+		};
+		77405DB31A528E7700033517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NPButtonFlipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NPButtonFlip.app/NPButtonFlip";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77405D8A1A528E7700033517 /* Build configuration list for PBXProject "NPButtonFlip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77405DAC1A528E7700033517 /* Debug */,
+				77405DAD1A528E7700033517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77405DAE1A528E7700033517 /* Build configuration list for PBXNativeTarget "NPButtonFlip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77405DAF1A528E7700033517 /* Debug */,
+				77405DB01A528E7700033517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77405DB11A528E7700033517 /* Build configuration list for PBXNativeTarget "NPButtonFlipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77405DB21A528E7700033517 /* Debug */,
+				77405DB31A528E7700033517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77405D871A528E7700033517 /* Project object */;
+}
