@@ -4,6 +4,8 @@
 
 This is a simple button with a circle at right, who will animate when changing state.
 
+<img src = "https://github.com/neopixl/NPFlipButton/blob/master/Documentation/npflipbutton.gif?raw=true" />
+
 
 ## Features
 
@@ -13,8 +15,7 @@ This is a simple button with a circle at right, who will animate when changing s
 ## Installation
 
 Grab the files in `Classes/NPButtonWithFlip`, `Classes/NPFlipView` and put it in your
-project. The code uses ARC, so make sure to turn that on for the files if you're
-not already using ARC.
+project.
 
 ## Usage
 
