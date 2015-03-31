@@ -11,7 +11,7 @@ This is a simple button with a circle at right, who will animate when changing s
 
 ## Features
 
-- automatically draw the button and set his text
+- automatically draw the button and set its text
 - animate the state change
 
 ## Installation
@@ -53,7 +53,7 @@ Import NPFlipButton
 ```swift
 import NPFlipButton
 ```
-Instanciate a new NPButtonWithFlip or get it from a Storyboard
+Instantiate a new NPButtonWithFlip or get it from a Storyboard
 Configure the parameters:
 ```swift
 button.setParameters(borderColor, offColor: offColor, onColor: onColor, flipOffImage: imageOff, flipOnImage: imageOn, text: "Button", textFont: textFont)
