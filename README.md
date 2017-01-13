@@ -38,7 +38,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'NPFlipButton', '~> 1.0.0'
+pod 'NPFlipButton', '~> 1.0.1'
 ```
 
 Then, run the following command:
@@ -56,7 +56,8 @@ import NPFlipButton
 Instantiate a new NPButtonWithFlip or get it from a Storyboard
 Configure the parameters:
 ```swift
-button.setParameters(borderColor, offColor: offColor, onColor: onColor, flipOffImage: imageOff, flipOnImage: imageOn, text: "Button", textFont: textFont)
+button.setParameters(borderColor: borderColor, offColor: offColor, onColor: onColor, flipOffImage: imageOff, flipOnImage: imageOn, text: "Button", textFont: textFont)
+
 ```
 
 ## Small Print

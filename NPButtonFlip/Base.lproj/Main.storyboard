@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,12 +20,12 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdn-y3-SG6" customClass="NPButtonWithFilp" customModule="NPButtonFlip" customModuleProvider="target">
-                                <rect key="frame" x="60" y="50" width="480" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="37.5" y="50" width="300" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="mD0-MF-lgj"/>
                                 </constraints>
@@ -31,36 +35,36 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RiE-bP-wkh" customClass="NPButtonWithFilp" customModule="NPButtonFlip" customModuleProvider="target">
-                                <rect key="frame" x="60" y="117" width="216" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="37.5" y="117" width="135" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="buttonLeftTouchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="IPE-tS-ecN"/>
                                     <action selector="buttonLeftTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="udJ-5s-63J"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I98-qk-NLK" customClass="NPButtonWithFilp" customModule="NPButtonFlip" customModuleProvider="target">
-                                <rect key="frame" x="324" y="117" width="216" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="202.5" y="117" width="135" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="buttonRightTouchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="eiK-Uf-5K0"/>
                                     <action selector="buttonRightTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nW0-Da-7gV"/>
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vA3-cp-dSC">
-                                <rect key="frame" x="271" y="220" width="59" height="21"/>
+                                <rect key="frame" x="158.5" y="220" width="58" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mco-QU-XJI" customClass="NPFlipView" customModule="NPButtonFlip" customModuleProvider="target">
-                                <rect key="frame" x="152" y="262" width="32" height="36"/>
+                                <rect key="frame" x="89" y="262" width="32" height="36"/>
                                 <connections>
                                     <action selector="flipViewLeftTouchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="6KB-DV-tHt"/>
                                     <action selector="flipViewLeftTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="66X-vH-foR"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HdA-Rm-CgZ" customClass="NPFlipView" customModule="NPButtonFlip" customModuleProvider="target">
-                                <rect key="frame" x="416" y="262" width="32" height="36"/>
+                                <rect key="frame" x="254" y="262" width="32" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="6Bd-pD-poc"/>
                                     <constraint firstAttribute="width" constant="32" id="nkm-HF-TTc"/>
@@ -71,36 +75,36 @@
                                 </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfq-7a-rdb">
-                                <rect key="frame" x="145" y="318" width="51" height="30"/>
+                                <rect key="frame" x="82" y="318" width="51" height="30"/>
                                 <state key="normal" title="ToBack">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="toBack:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7MG-Mx-3sD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2l-da-Gb7">
-                                <rect key="frame" x="409" y="318" width="52" height="30"/>
+                                <rect key="frame" x="246.5" y="318" width="53" height="30"/>
                                 <state key="normal" title="ToFront">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="toFront:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lfO-UA-Pg5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZo-hy-qlp">
-                                <rect key="frame" x="417" y="182" width="30" height="30"/>
+                                <rect key="frame" x="255" y="182" width="30" height="30"/>
                                 <state key="normal" title="Off">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="off:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MK9-yw-UOC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l68-bC-5ZE">
-                                <rect key="frame" x="154" y="182" width="30" height="30"/>
+                                <rect key="frame" x="90.5" y="182" width="30" height="30"/>
                                 <state key="normal" title="On">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="on:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QHf-Jo-fBN"/>

@@ -1,9 +1,5 @@
 .DS_Store
 NPButtonFlip.xcodeproj/project.xcworkspace/xcuserdata/savepanda.xcuserdatad/UserInterfaceState.xcuserstate
-NPButtonFlip.xcodeproj/xcuserdata/axel.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
-NPButtonFlip.xcodeproj/xcuserdata/axel.xcuserdatad/xcschemes/NPButtonFlip.xcscheme
-NPButtonFlip.xcodeproj/xcuserdata/axel.xcuserdatad/xcschemes/xcschememanagement.plist
-NPButtonFlip.xcodeproj/xcuserdata/savepanda.xcuserdatad/xcschemes/NPButtonFlip.xcscheme
-NPButtonFlip.xcodeproj/xcuserdata/savepanda.xcuserdatad/xcschemes/xcschememanagement.plist
+NPButtonFlip.xcodeproj/xcuserdata/*
 UserInterfaceState.xcuserstate
 NPButtonFlip.xccheckout
