@@ -55,37 +55,37 @@ public class NPButtonWithFilp: UIControl {
 		self.addSubview(flipButton)
 
 		let labelCenterYConstraint = NSLayoutConstraint(item:label,
-		                                                attribute:NSLayoutAttribute.centerY,
-		                                                relatedBy:NSLayoutRelation.equal,
+                                                        attribute:NSLayoutConstraint.Attribute.centerY,
+                                                        relatedBy:NSLayoutConstraint.Relation.equal,
 		                                                toItem:self,
-		                                                attribute:NSLayoutAttribute.centerY,
+                                                        attribute:NSLayoutConstraint.Attribute.centerY,
 		                                                multiplier:1,
 		                                                constant:0)
 		self.addConstraint(labelCenterYConstraint)
 
 		let labelPinLeftBorderConstraint = NSLayoutConstraint(item:label,
-		                                                      attribute:NSLayoutAttribute.leading,
-		                                                      relatedBy:NSLayoutRelation.equal,
+                                                              attribute:NSLayoutConstraint.Attribute.leading,
+                                                              relatedBy:NSLayoutConstraint.Relation.equal,
 		                                                      toItem:self,
-		                                                      attribute:NSLayoutAttribute.leading,
+                                                              attribute:NSLayoutConstraint.Attribute.leading,
 		                                                      multiplier:1,
 		                                                      constant:15)
 		self.addConstraint(labelPinLeftBorderConstraint)
 
 		let flipCenterYConstraint = NSLayoutConstraint(item:flipButton,
-		                                               attribute:NSLayoutAttribute.centerY,
-		                                               relatedBy:NSLayoutRelation.equal,
+                                                       attribute:NSLayoutConstraint.Attribute.centerY,
+                                                       relatedBy:NSLayoutConstraint.Relation.equal,
 		                                               toItem:self,
-		                                               attribute:NSLayoutAttribute.centerY,
+                                                       attribute:NSLayoutConstraint.Attribute.centerY,
 		                                               multiplier:1,
 		                                               constant:2)
 		self.addConstraint(flipCenterYConstraint)
 
 		let flipPinLeftBorderConstraint = NSLayoutConstraint(item:flipButton,
-		                                                     attribute:NSLayoutAttribute.trailing,
-		                                                     relatedBy:NSLayoutRelation.equal,
+                                                             attribute:NSLayoutConstraint.Attribute.trailing,
+                                                             relatedBy:NSLayoutConstraint.Relation.equal,
 		                                                     toItem:self,
-		                                                     attribute:NSLayoutAttribute.trailing,
+                                                             attribute:NSLayoutConstraint.Attribute.trailing,
 		                                                     multiplier:1,
 		                                                     constant:-10)
 		self.addConstraint(flipPinLeftBorderConstraint)
@@ -119,10 +119,10 @@ public class NPButtonWithFilp: UIControl {
 
 		let views = ["view": flipButton]
 		//+4 for shadow
-		let verticalConstraints = NSLayoutConstraint.constraints(withVisualFormat:"V:[view(\(flipOffImage.size.height+4))]", options: [], metrics: nil, views: views)
+        let verticalConstraints = NSLayoutConstraint.constraints(withVisualFormat:"V:[view(\(flipOffImage.size.height+4))]", options: [], metrics: nil, views: views as [String : Any])
 		flipButton.addConstraints(verticalConstraints)
 
-		let horizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:[view(\(flipOffImage.size.width))]", options: [], metrics: nil, views: views)
+        let horizontalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:[view(\(flipOffImage.size.width))]", options: [], metrics: nil, views: views as [String : Any])
 		flipButton.addConstraints(horizontalConstraints)
 	}
 
@@ -185,11 +185,11 @@ public class NPButtonWithFilp: UIControl {
 		self.sendActions(for: .touchUpInside)
 	}
 
-	internal func flipTouchUpInside() {
+    @objc internal func flipTouchUpInside() {
 		didEnd()
 	}
 
-	internal func flipTouchDown() {
+    @objc internal func flipTouchDown() {
 		didBegin()
 	}
 }
